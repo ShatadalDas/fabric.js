@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  font-family: sans-serif;
+
+}
+body {
+    margin: 1rem;
+}
+#my-canvas {
+  margin: 1rem;
+  background-color: #ddd;
+}
+
+p {
+  font-size: clamp(0.5rem, 2vw + 0.5rem, 2.5rem);
+  margin: 1rem 0;
+}
+input[type="file"] {
+    display: none;
+}
+
+.image-selector {
+  display: block;
+  background-color: rgb(55, 255, 0);
+  cursor: pointer;
+  font-size: 2vw;
+  width: max-content;
+  padding: 1vw 2vw;
+  border-radius: 10px;
+  color: hsl(250, 100%, 20%);
+}
