@@ -12,10 +12,6 @@ file.addEventListener("change", () => {
 
 reader.addEventListener("load", () => {
   fabric.Image.fromURL(reader.result, (img) => {
-    img.set({
-      left: 0,
-      top: 0,
-    });
     img.scaleToHeight(300);
     img.scaleToWidth(300);
     canvas.add(img);
@@ -29,6 +25,8 @@ reader.addEventListener("load", () => {
       opt.e.preventDefault();
       opt.e.stopPropagation();
     });
+    let obj = new fabric.ActiveSelection(canvas.getObjects());
+    canvas.centerObject(obj);
   });
 });
 
